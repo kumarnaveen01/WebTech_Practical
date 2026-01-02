@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day of Week</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 8px 20px;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #5568d3;
+        }
+        
+        #result {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Day of the Week</h2>
+<!-- Q4: Day of the Week -->
+<input type="number" id="day" placeholder="Enter 1-7">
+<button onclick="showDay()">Show</button>
+<p id="result"></p>
+
+<script>
+function showDay() {
+    let d = parseInt(document.getElementById("day").value);
+    let day;
+    switch (d) {
+        case 1: day = "Monday"; break;
+        case 2: day = "Tuesday"; break;
+        case 3: day = "Wednesday"; break;
+        case 4: day = "Thursday"; break;
+        case 5: day = "Friday"; break;
+        case 6: day = "Saturday"; break;
+        case 7: day = "Sunday"; break;
+        default: day = "Invalid";
+    }
+    document.getElementById("result").innerText = day;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 8px 20px;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #5568d3;
+        }
+        
+        #result {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Find Largest Number</h2>
+<!-- Q2: Largest of Two Numbers -->
+<input type="number" id="a" placeholder="Number 1">
+<input type="number" id="b" placeholder="Number 2">
+<button onclick="largest()">Find</button>
+<p id="result"></p>
+
+<script>
+function largest() {
+    let x = Number(document.getElementById("a").value);
+    let y = Number(document.getElementById("b").value);
+    document.getElementById("result").innerText =
+        (x > y) ? x + " is larger" : y + " is larger";
+}
+</script>
+
+</body>
+</html>
