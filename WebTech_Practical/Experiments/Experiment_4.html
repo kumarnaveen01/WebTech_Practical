@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Q4: Day of the Week -->
+<input type="number" id="day">
+<button onclick="show()">Show</button>
+<p id="out"></p>
+
+<script>
+function show() {
+    let d = parseInt(document.getElementById("day").value);
+    let day;
+    switch (d) {
+        case 1: day = "Monday"; break;
+        case 2: day = "Tuesday"; break;
+        case 3: day = "Wednesday"; break;
+        case 4: day = "Thursday"; break;
+        case 5: day = "Friday"; break;
+        case 6: day = "Saturday"; break;
+        case 7: day = "Sunday"; break;
+        default: day = "Invalid";
+    }
+    document.getElementById("out").innerText = day;
+}
+</script>
+
+</body>
+</html>

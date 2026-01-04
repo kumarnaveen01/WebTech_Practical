@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Q3: Grade Calculator -->
+<input type="number" id="marks">
+<button onclick="grade()">Check</button>
+<p id="out"></p>
+
+<script>
+function grade() {
+    let m = document.getElementById("marks").value;
+    let g;
+    if (m >= 90) g = "A";
+    else if (m >= 75) g = "B";
+    else if (m >= 60) g = "C";
+    else if (m >= 40) g = "D";
+    else g = "F";
+    document.getElementById("out").innerText = g;
+}
+</script>
+
+</body>
+</html>

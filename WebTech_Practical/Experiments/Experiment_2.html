@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Q2: Largest of Two Numbers -->
+<input type="number" id="a">
+<input type="number" id="b">
+<button onclick="largest()">Find</button>
+<p id="out"></p>
+
+<script>
+function largest() {
+    let x = document.getElementById("a").value;
+    let y = document.getElementById("b").value;
+    document.getElementById("out").innerText =
+        (x > y) ? x + " is larger" : y + " is larger";
+}
+</script>
+
+</body>
+</html>
